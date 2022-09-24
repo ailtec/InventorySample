@@ -11,8 +11,8 @@
         <Image Stretch="None"
                x:Name="splashImage"
                Source="ms-appx:///Assets/SplashScreen.png"
-               Canvas.Left="350"
-               Canvas.Top="250" />
+               Canvas.Left="498"
+               Canvas.Top="350" RenderTransformOrigin="0.499,0.514" HorizontalAlignment="Stretch" />
         <ProgressRing x:Name="progressRing"
                       Height="40"
                       Width="40"

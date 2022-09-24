@@ -1,0 +1,72 @@
+﻿<UserControl x:ConnectionId='1'
+    x:Class="Inventory.Views.CustomersOrders"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:Inventory.Models"
+    xmlns:controls="using:Inventory.Controls"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="400">
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="HeaderTemplate"                               >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Order ID" Style="{StaticResource ColumnHeaderStyle}" />
+                <TextBlock Grid.Column="1" Text="Order Date" Style="{StaticResource ColumnHeaderStyle}" />
+                <TextBlock Grid.Column="2" Text="Shipped Date" Style="{StaticResource ColumnHeaderStyle}" />
+                <TextBlock Grid.Column="3" Text="Delivered Date" Style="{StaticResource ColumnHeaderStyle}" />
+                <TextBlock Grid.Column="4" Text="Region" Style="{StaticResource ColumnHeaderStyle}" />
+                <TextBlock Grid.Column="5" Text="Country" Style="{StaticResource ColumnHeaderStyle}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ItemTemplate"                               >
+            <Grid x:ConnectionId='3'>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:ConnectionId='4' Grid.Column="0"                         Style="{StaticResource ColumnValueStyle}" />
+                <TextBlock x:ConnectionId='5' Grid.Column="1"                                                                                            Style="{StaticResource ColumnValueStyle}" />
+                <TextBlock x:ConnectionId='6' Grid.Column="2"                                                                                              Style="{StaticResource ColumnValueStyle}" />
+                <TextBlock x:ConnectionId='7' Grid.Column="3"                                                                                                Style="{StaticResource ColumnValueStyle}" />
+                <TextBlock x:ConnectionId='8' Grid.Column="4"                            Style="{StaticResource ColumnValueStyle}" />
+                <TextBlock x:ConnectionId='9' Grid.Column="5"                                              Style="{StaticResource ColumnValueStyle}" />
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid>
+        <controls:DataList x:ConnectionId='12'                                                    
+                                                                                                      
+                           NewLabel="New Order"
+                                                                                      
+                           HeaderTemplate="{StaticResource HeaderTemplate}"
+                           ItemTemplate="{StaticResource ItemTemplate}"
+                                                                                                    
+                                                                                  
+                                                                     
+                                                                             
+                                                                        
+                                                                                    
+                                                                                           
+                                                                                             
+                                                                                     
+                                                                                         
+                                                                                       
+                                                                                     />
+    </Grid>
+</UserControl>
+

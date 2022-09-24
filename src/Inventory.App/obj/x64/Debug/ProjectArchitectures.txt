@@ -1,0 +1,1 @@
+C:\Users\ALI\Documents\Mega\GitHub\InventorySample\src\Inventory.App\Inventory.App.csproj;x64

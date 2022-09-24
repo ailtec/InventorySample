@@ -1,0 +1,70 @@
+﻿<UserControl x:ConnectionId='1'
+    x:Class="Inventory.Views.OrdersDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    xmlns:views="using:Inventory.Views"
+    xmlns:viewmodels="using:Inventory.ViewModels"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="400">
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="DetailsTemplate"                                              >
+            <controls:FluidGrid x:ConnectionId='3' Margin="0,12,0,0" Columns="2" ColumnSpacing="12" RowSpacing="12">
+                <controls:FormTextBox x:ConnectionId='4' Header="Ship Address"                                                       />
+                <controls:FormTextBox x:ConnectionId='5' Header="Ship City"                                                    />
+                <controls:FluidGrid Columns="2" ColumnSpacing="6" RowSpacing="12" MinColumnWidth="120">
+                    <controls:FormTextBox x:ConnectionId='12' Header="Ship Postal Code"                                                          />
+                    <controls:FormTextBox x:ConnectionId='13' Header="Ship Region"                                                      />
+                </controls:FluidGrid>
+                <controls:FormComboBox x:ConnectionId='6' Header="Ship Country"                                                  VerticalAlignment="Top"
+                                                                                                           SelectedValuePath="CountryCodeID" DisplayMemberPath="Name" />
+
+                <controls:FormComboBox x:ConnectionId='7' Header="Status"                                                
+                                                                                                                                            
+                                        SelectedValuePath="Status" DisplayMemberPath="Name" />
+                <controls:FormComboBox x:ConnectionId='8' Header="Payment Type"                                                 
+                                                                                                                                                 
+                                        SelectedValuePath="PaymentTypeID" DisplayMemberPath="Name"
+                                                                                                       />
+
+                <controls:FluidGrid Columns="2" ColumnSpacing="6" RowSpacing="12" MinColumnWidth="120">
+                    <controls:FormCalendarDatePicker x:ConnectionId='10' Header="Shipped Date"                                                      
+                                                                                                                                                  
+                                                                                                        />
+                    <controls:FormComboBox x:ConnectionId='11' Header="Ship Via"                                             
+                                                                                                                                              SelectedValuePath="ShipperID" DisplayMemberPath="Name"
+                                                                                                        />
+                </controls:FluidGrid>
+
+                <controls:FormCalendarDatePicker x:ConnectionId='9' Header="Delivered Date"                                                        
+                                                                                                                                                    
+                                                                                                        />
+            </controls:FluidGrid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid x:ConnectionId='14'                                                                                                                       >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid BorderBrush="LightGray" 
+              BorderThickness="0,0,1,0"                                   
+              Background="{StaticResource DetailsViewBackgroundColor}">
+            <views:OrdersCard x:ConnectionId='16' Margin="6,12"                                             />
+        </Grid>
+
+        <controls:Details x:ConnectionId='15' x:Name="details" Grid.Column="1" Margin="12,6,6,6"
+                                                             
+                          DetailsTemplate="{StaticResource DetailsTemplate}"
+                                                                                 
+                                                                      
+                                                                          
+                                                                      
+                                                                           />
+    </Grid>
+</UserControl>
+

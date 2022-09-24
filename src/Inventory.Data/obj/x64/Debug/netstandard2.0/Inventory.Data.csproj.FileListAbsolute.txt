@@ -1,0 +1,10 @@
+C:\Users\ALI\Documents\Mega\GitHub\InventorySample\src\Inventory.Data\bin\x64\Debug\netstandard2.0\Inventory.Data.deps.json
+C:\Users\ALI\Documents\Mega\GitHub\InventorySample\src\Inventory.Data\bin\x64\Debug\netstandard2.0\Inventory.Data.dll
+C:\Users\ALI\Documents\Mega\GitHub\InventorySample\src\Inventory.Data\bin\x64\Debug\netstandard2.0\Inventory.Data.pdb
+C:\Users\ALI\Documents\Mega\GitHub\InventorySample\src\Inventory.Data\obj\x64\Debug\netstandard2.0\Inventory.Data.csproj.AssemblyReference.cache
+C:\Users\ALI\Documents\Mega\GitHub\InventorySample\src\Inventory.Data\obj\x64\Debug\netstandard2.0\Inventory.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALI\Documents\Mega\GitHub\InventorySample\src\Inventory.Data\obj\x64\Debug\netstandard2.0\Inventory.Data.AssemblyInfoInputs.cache
+C:\Users\ALI\Documents\Mega\GitHub\InventorySample\src\Inventory.Data\obj\x64\Debug\netstandard2.0\Inventory.Data.AssemblyInfo.cs
+C:\Users\ALI\Documents\Mega\GitHub\InventorySample\src\Inventory.Data\obj\x64\Debug\netstandard2.0\Inventory.Data.csproj.CoreCompileInputs.cache
+C:\Users\ALI\Documents\Mega\GitHub\InventorySample\src\Inventory.Data\obj\x64\Debug\netstandard2.0\Inventory.Data.dll
+C:\Users\ALI\Documents\Mega\GitHub\InventorySample\src\Inventory.Data\obj\x64\Debug\netstandard2.0\Inventory.Data.pdb
